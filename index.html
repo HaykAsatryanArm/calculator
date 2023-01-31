@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="calculator" id="calc">
+        <div class="display">
+            <input type="text" class="calcDisplay" id="calcDisplay" readonly>
+        </div>
+        <div class="buttons">
+            <span id="clear">C</span>
+            <span id="delete"><i class="fas fa-backspace"></i></span>
+            <span id="off"><i class="fas fa-power-off"></i></span>
+            <span id="devide" onclick="sum('/')">/</span>
+
+            <span onclick="num(7)">7</span>
+            <span onclick="num(8)">8</span>
+            <span onclick="num(9)">9</span>
+            <span id="multiple" onclick="sum('*')">*</span>
+
+            <span onclick="num(4)">4</span>
+            <span onclick="num(5)">5</span>
+            <span onclick="num(6)">6</span>
+            <span id="minus" onclick="sum('-')">-</span>
+
+            <span onclick="num(1)">1</span>
+            <span onclick="num(2)">2</span>
+            <span onclick="num(3)">3</span>
+            <span id="plus" onclick="sum('+')">+</span>
+
+            <span id="zero">0</span>
+            <span id="dot" onclick="num('.')">.</span>
+            <span class="span" onclick="count()">=</span>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="sidebar" id="side">
+        <h1>HISTORY</h1>
+        <div class="history">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
